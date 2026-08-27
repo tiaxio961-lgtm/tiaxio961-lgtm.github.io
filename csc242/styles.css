@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dce8f2;
+    color: #263645;
+    margin: 0;
+    padding: 40px;
+}
+
+#content {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 35px;
+    background-color: white;
+    border: 3px solid #395f7a;
+    border-radius: 10px;
+}
+
+#main-title {
+    color: #26b94b;
+    text-align: center;
+}
+
+h2 {
+    color: #20c438;
+}
+
+p {
+    line-height: 1.6;
+}
+
+#github-link {
+    background-color: #e6f0f5;
+    padding: 10px;
+}
+
+#assignments {
+    list-style-type: none;
+    padding: 0;
+}
+
+#assignments li {
+    background-color: #edf5f8;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+a {
+    color: #356a8f;
+    text-decoration: none;
+}
