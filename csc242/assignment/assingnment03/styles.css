@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    background-color: #eaf4f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #d6eaf2;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #245b78;
+    font-size: 45px;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    flex: 1;
+}
+
+nav a {
+    display: block;
+    background-color: #3d7ea6;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+}
+
+/* Top Content */
+.top-content {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Sidebar */
+aside {
+    background-color: #a9d2e3;
+    padding: 20px;
+    text-align: center;
+}
+
+aside h2 {
+    color: #245b78;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside a {
+    display: block;
+    background-color: white;
+    color: #3d7ea6;
+    text-decoration: none;
+    padding: 5px;
+    margin: 2px;
+}
+
+/* Three Columns */
+.columns {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.columns article {
+    flex: 1;
+    background-color: #bcdde9;
+}
+
+.columns h2 {
+    background-color: #39789c;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.columns img {
+    width: 100%;
+    display: block;
+}
+
+/* Ideas */
+.ideas {
+    margin-top: 10px;
+}
+
+.ideas article {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.ideas img {
+    width: 20%;
+}
+
+.ideas article section {
+    flex: 1;
+    background-color: #39789c;
+    color: white;
+    padding: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #3d7ea6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Small Screen */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .ideas article {
+        flex-direction: column;
+    }
+
+    .ideas img {
+        width: 100%;
+    }
+}
