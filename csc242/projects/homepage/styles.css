@@ -1,0 +1,301 @@
+/* Tianao Xiong - CSCE 242 Project Homepage */
+
+:root {
+    --primary-blue: #49688f;
+    --light-blue: #87a4cc;
+    --border-blue: #d9e1eb;
+    --white: #ffffff;
+    --black: #111111;
+    --button-blue: #1687e8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--white);
+    color: var(--black);
+}
+
+
+/* Header */
+
+header {
+    width: 85%;
+    margin: auto;
+    border-bottom: 1px solid var(--border-blue);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container h2 {
+    color: var(--primary-blue);
+    font-size: 18px;
+    line-height: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-size: 13px;
+}
+
+
+/* Main */
+
+main {
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    width: 520px;
+}
+
+.hero h1 {
+    color: var(--primary-blue);
+    font-size: 46px;
+    line-height: 1.25;
+    margin: 0 0 20px;
+}
+
+.hero-text p {
+    color: var(--light-blue);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.hero img {
+    width: 450px;
+    max-width: 45%;
+}
+
+.small-button {
+    display: inline-block;
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    border-radius: 25px;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+/* Why Interpreting Matters */
+
+.matters {
+    padding: 35px 0 70px;
+}
+
+.matters > h2 {
+    color: var(--primary-blue);
+    font-size: 42px;
+    margin: 0 0 60px;
+}
+
+.matter-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.matter-text {
+    width: 50%;
+}
+
+.matter-text h3 {
+    color: var(--primary-blue);
+    font-size: 21px;
+    font-weight: normal;
+    margin: 0 0 15px;
+}
+
+.matter-text p {
+    color: var(--light-blue);
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 560px;
+    margin: 0;
+}
+
+.matter-row img {
+    width: 310px;
+    height: 175px;
+    object-fit: cover;
+}
+
+
+/* Learning Section */
+
+.learning {
+    display: flex;
+    gap: 80px;
+    padding: 100px 10px 120px;
+}
+
+.learning-intro {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.learning-intro h2 {
+    color: var(--primary-blue);
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 1.15;
+    margin-top: 0;
+}
+
+.learning-intro p {
+    color: var(--light-blue);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.learning-options {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px 80px;
+    align-items: flex-start;
+}
+
+.learning-card {
+    width: 220px;
+}
+
+.learning-card h3 {
+    font-size: 20px;
+    margin: 0 0 3px;
+}
+
+.learning-card p {
+    font-size: 19px;
+    line-height: 1.05;
+    margin: 0;
+}
+
+.start-button {
+    display: block;
+    background: var(--button-blue);
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 25px 50px;
+    width: 410px;
+}
+
+
+/* Smaller Screens */
+
+@media (max-width: 800px) {
+
+    header,
+    main {
+        width: 90%;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 35px;
+        padding: 70px 0;
+        min-height: auto;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .matters > h2 {
+        font-size: 32px;
+    }
+
+    .matter-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .matter-text {
+        width: 100%;
+    }
+
+    .matter-row img {
+        width: 100%;
+        height: auto;
+    }
+
+    .learning {
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 60px;
+    }
+
+    .learning-intro {
+        width: 100%;
+    }
+
+    .learning-options {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .learning-card {
+        width: 100%;
+    }
+
+    .start-button {
+        width: 100%;
+        font-size: 21px;
+    }
+}
