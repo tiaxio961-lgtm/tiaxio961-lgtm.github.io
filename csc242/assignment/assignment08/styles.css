@@ -1,0 +1,139 @@
+:root {
+    --background: #eaf4f8;
+    --box-color: #d6eaf2;
+    --dark-blue: #245b78;
+    --blue: #3d7ea6;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: var(--dark-blue);
+    margin-bottom: 5px;
+}
+
+header h2 {
+    color: var(--blue);
+    margin-top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    color: var(--dark-blue);
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+nav li:not(:last-child)::after {
+    content: "|";
+    padding-left: 20px;
+}
+
+#toggle-nav {
+    display: none;
+    color: var(--dark-blue);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+section {
+    background: var(--box-color);
+    padding: 30px;
+    min-height: 220px;
+}
+
+section h2 {
+    color: var(--dark-blue);
+}
+
+label {
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input {
+    width: 100px;
+    padding: 5px;
+}
+
+button {
+    background: var(--dark-blue);
+    color: var(--white);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#points-result,
+#semester-result {
+    margin-top: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+@media (max-width: 600px) {
+
+    #toggle-nav {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    #main-nav.show {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        padding: 5px;
+    }
+
+    nav li:not(:last-child)::after {
+        content: "";
+        padding: 0;
+    }
+
+    label {
+        display: block;
+        width: auto;
+        text-align: center;
+        margin: 0 0 5px;
+    }
+}
