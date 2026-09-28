@@ -1,0 +1,732 @@
+/* Tianao Xiong - CSCE 242 Project Homepage */
+
+:root {
+    --primary-blue: #49688f;
+    --light-blue: #87a4cc;
+    --border-blue: #d9e1eb;
+    --white: #ffffff;
+    --black: #111111;
+    --button-blue: #1687e8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--white);
+    color: var(--black);
+}
+
+
+/* Header */
+
+header {
+    width: 85%;
+    margin: auto;
+    border-bottom: 1px solid var(--border-blue);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container h2 {
+    color: var(--primary-blue);
+    font-size: 18px;
+    line-height: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-size: 13px;
+}
+
+
+/* Main */
+
+main {
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    width: 520px;
+}
+
+.hero h1 {
+    color: var(--primary-blue);
+    font-size: 46px;
+    line-height: 1.25;
+    margin: 0 0 20px;
+}
+
+.hero-text p {
+    color: var(--light-blue);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.hero img {
+    width: 450px;
+    max-width: 45%;
+}
+
+.small-button {
+    display: inline-block;
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    border-radius: 25px;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+/* Why Interpreting Matters */
+
+.matters {
+    padding: 35px 0 70px;
+}
+
+.matters > h2 {
+    color: var(--primary-blue);
+    font-size: 42px;
+    margin: 0 0 60px;
+}
+
+.matter-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.matter-text {
+    width: 50%;
+}
+
+.matter-text h3 {
+    color: var(--primary-blue);
+    font-size: 21px;
+    font-weight: normal;
+    margin: 0 0 15px;
+}
+
+.matter-text p {
+    color: var(--light-blue);
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 560px;
+    margin: 0;
+}
+
+.matter-row img {
+    width: 310px;
+    height: 175px;
+    object-fit: cover;
+}
+
+
+/* Learning Section */
+
+.learning {
+    display: flex;
+    gap: 80px;
+    padding: 100px 10px 120px;
+}
+
+.learning-intro {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.learning-intro h2 {
+    color: var(--primary-blue);
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 1.15;
+    margin-top: 0;
+}
+
+.learning-intro p {
+    color: var(--light-blue);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.learning-options {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px 80px;
+    align-items: flex-start;
+}
+
+.learning-card {
+    width: 220px;
+}
+
+.learning-card h3 {
+    font-size: 20px;
+    margin: 0 0 3px;
+}
+
+.learning-card p {
+    font-size: 19px;
+    line-height: 1.05;
+    margin: 0;
+}
+
+.start-button {
+    display: block;
+    background: var(--button-blue);
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 25px 50px;
+    width: 410px;
+}
+
+
+/* Smaller Screens */
+
+@media (max-width: 800px) {
+
+    header,
+    main {
+        width: 90%;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 35px;
+        padding: 70px 0;
+        min-height: auto;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .matters > h2 {
+        font-size: 32px;
+    }
+
+    .matter-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .matter-text {
+        width: 100%;
+    }
+
+    .matter-row img {
+        width: 100%;
+        height: auto;
+    }
+
+    .learning {
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 60px;
+    }
+
+    .learning-intro {
+        width: 100%;
+    }
+
+    .learning-options {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .learning-card {
+        width: 100%;
+    }
+
+    .start-button {
+        width: 100%;
+        font-size: 21px;
+    }
+}/* Note-Taking Page */
+
+.notes-page {
+    max-width: 1000px;
+    padding: 40px 25px;
+}
+
+.page-title {
+    background: var(--border-blue);
+    color: var(--primary-blue);
+    text-align: center;
+    padding: 18px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* Note-Taking Intro */
+
+.notes-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: var(--white);
+    border: 1px solid var(--border-blue);
+    padding: 35px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.notes-intro-text {
+    flex: 1;
+}
+
+.notes-intro-text p {
+    color: var(--primary-blue);
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 25px;
+}
+
+.notes-intro img {
+    width: 300px;
+    max-width: 40%;
+}
+
+
+/* Why Take Notes */
+
+.why-notes {
+    border: 1px solid var(--border-blue);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.why-notes h2 {
+    background: var(--border-blue);
+    color: var(--primary-blue);
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+.why-notes-content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 35px;
+}
+
+.note-icon {
+    color: var(--button-blue);
+    font-size: 70px;
+    padding: 25px;
+}
+
+.why-notes-content p {
+    color: var(--primary-blue);
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* Note-Taking Example */
+
+.note-example {
+    border: 1px solid var(--border-blue);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.note-example h2 {
+    background: var(--border-blue);
+    color: var(--primary-blue);
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.example-info {
+    color: var(--primary-blue);
+    text-align: center;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: 20px auto 30px;
+}
+
+.example-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.example-card {
+    flex: 1;
+    text-align: center;
+    border: 2px solid var(--border-blue);
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.example-card h3 {
+    background: var(--border-blue);
+    color: var(--primary-blue);
+    margin: 0;
+    padding: 15px;
+}
+
+.example-card p {
+    color: var(--primary-blue);
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.example-card img {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+}
+
+.short-notes {
+    font-weight: bold;
+}
+
+.example-arrow {
+    color: var(--button-blue);
+    font-size: 55px;
+    font-weight: bold;
+}
+
+
+/* Note-Taking Page - Smaller Screens */
+
+@media (max-width: 800px) {
+
+    .notes-page {
+        padding: 30px 0;
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+
+    .notes-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .notes-intro img {
+        width: 250px;
+        max-width: 100%;
+    }
+
+    .why-notes-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .example-row {
+        flex-direction: column;
+    }
+
+    .example-arrow {
+        transform: rotate(90deg);
+    }
+
+    .example-card {
+        width: 100%;
+    }
+}
+/* Interpreting Basics Page */
+
+.basics-page {
+    max-width: 1000px;
+    padding: 40px 25px;
+}
+
+.basics-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 40px;
+}
+
+.basics-intro p {
+    color: var(--primary-blue);
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+
+/* Three Basic Steps */
+
+.basic-steps {
+    border: 1px solid var(--border-blue);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.basic-steps > h2 {
+    background: var(--border-blue);
+    color: var(--primary-blue);
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+.steps-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 35px;
+}
+
+.steps-text {
+    flex: 1;
+}
+
+.step {
+    margin-bottom: 30px;
+}
+
+.step:last-child {
+    margin-bottom: 0;
+}
+
+.step h3 {
+    color: var(--primary-blue);
+    font-size: 21px;
+    margin: 0 0 8px;
+}
+
+.step p {
+    color: var(--light-blue);
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.steps-content img {
+    width: 350px;
+    max-width: 40%;
+}
+
+
+/* Remember */
+
+.basics-remember {
+    border: 1px solid var(--border-blue);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.basics-remember h2 {
+    color: var(--primary-blue);
+    text-align: center;
+    margin-top: 0;
+}
+
+.basics-remember p {
+    color: var(--primary-blue);
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/* Basics Page - Smaller Screens */
+
+@media (max-width: 800px) {
+
+    .basics-page {
+        padding: 30px 0;
+    }
+
+    .steps-content {
+        flex-direction: column;
+    }
+
+    .steps-content img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .step {
+        text-align: center;
+    }
+}
+/* Common Mistakes and Tips Page */
+
+.tips-page {
+    max-width: 1000px;
+    padding: 40px 25px;
+}
+
+.mistakes,
+.quick-tips {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.mistakes h2,
+.quick-tips h2 {
+    color: var(--primary-blue);
+    font-size: 28px;
+}
+
+.mistakes img,
+.quick-tips img {
+    width: 100%;
+    max-width: 850px;
+}
+
+
+/* Accuracy Over Speed */
+
+.accuracy-speed {
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.accuracy-speed h2 {
+    margin-top: 0;
+}
+
+.accuracy-speed p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Remember */
+
+.tips-remember {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 50px;
+    border: 1px solid var(--border-blue);
+}
+
+.tips-remember h2 {
+    color: var(--primary-blue);
+}
+
+.tips-remember p {
+    color: var(--primary-blue);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.tips-remember img {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* Tip small */
+
+@media (max-width: 800px) {
+
+    .tips-page {
+        padding: 30px 0;
+    }
+
+    .mistakes h2,
+    .quick-tips h2 {
+        font-size: 24px;
+    }
+
+    .accuracy-speed {
+        padding: 25px 15px;
+    }
+
+    .tips-remember {
+        padding: 20px 10px;
+    }
+}
+/* Mobile Navigation */
+
+#toggle-nav {
+    display: none;
+    color: var(--primary-blue);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+
+    #toggle-nav {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav ul.hide-small {
+        display: none;
+    }
+}
