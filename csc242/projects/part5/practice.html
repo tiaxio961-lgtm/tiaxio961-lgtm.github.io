@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Practice - Better Interpretation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+            <h2>Better<br>Interpretation</h2>
+
+            <nav>
+                <div id="toggle-nav">&#9776;</div>
+
+                <ul id="nav-items" class="hide-small">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="basics.html">Basics</a></li>
+                    <li><a href="notes.html">Note</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                    <li><a href="practice.html">Practice</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="practice-page">
+
+        <h1 class="page-title">PRACTICE YOUR NOTE-TAKING</h1>
+
+        <section class="practice-intro">
+            <h2>Take notes as quickly as possible!</h2>
+
+            <p>
+                Try to write down the important information without writing
+                every single word. Start with easy and work your way up.
+            </p>
+        </section>
+
+        <div class="level-buttons">
+            <button id="easy-button">Easy</button>
+            <button id="normal-button">Normal</button>
+            <button id="hard-button">Hard</button>
+        </div>
+
+
+        <section id="easy" class="practice-level">
+
+            <h2>Level 1 - Easy</h2>
+
+            <p class="practice-text">
+                My phone number is 803-555-2741. My address is
+                124 Green Street, Columbia, South Carolina.
+                My appointment is Monday at 9:30 AM.
+            </p>
+
+            <button class="notes-button" id="easy-notes-button">
+                Show Important Notes
+            </button>
+
+            <div id="easy-notes" class="answer hide-answer">
+                <h3>Important Notes</h3>
+
+                <p>
+                    Phone: 803-555-2741<br>
+                    Address: 124 Green Street, Columbia, SC<br>
+                    Appointment: Monday - 9:30 AM
+                </p>
+            </div>
+
+        </section>
+
+
+        <section id="normal" class="practice-level hide-level">
+
+            <h2>Level 2 - Normal</h2>
+
+            <p class="practice-text">
+                My name is Michael Johnson. My phone number is
+                803-555-6812. My Social Security number is
+                472-36-9158. My address is 215 Pine Street,
+                Columbia, South Carolina. I need to change my
+                appointment on Tuesday at 2:30 PM. I just want
+                to verify one more time that my appointment was
+                scheduled for Tuesday at 2:30 PM was change to
+                Wednesday at 10:00 AM.
+            </p>
+
+        
+
+            <button class="notes-button" id="normal-notes-button">
+                Show Important Notes
+            </button>
+
+            <div id="normal-notes" class="answer hide-answer">
+                <h3>Important Notes</h3>
+
+                <p>
+                    Name: Michael Johnson<br>
+                    Phone: 803-555-6812<br>
+                    SSN: 472-36-9158<br>
+                    Address: 215 Pine Street, Columbia, SC<br>
+                    Cancel appointment<br>
+                    Appointment: Tuesday - 2:30 PM
+                </p>
+            </div>
+
+        </section>
+
+
+        <section id="hard" class="practice-level hide-level">
+
+            <h2>Level 3 - Hard</h2>
+
+            <p class="practice-text">
+                Help! The address is 1250 Main Street, but we're not
+                there anymore. We are now at 1400 Assembly Street.
+                Okay, what is your name sir, and what is the situation?
+                Do you know the people involved?
+                No, my name is Andrew. I don't know them. I saw these
+                guys fighting and I tried to break it up, but they
+                started hitting me as well. Please send help. I would
+                like to get these people arrested for assault.
+                Please come as soon as possible.
+                Yes sir, the police will be on the way. Just confirming
+                one more time, what is the address again?
+                We are at 1400 Assembly Street now. The fight started
+                at 1250 Main Street, but they were fighting while
+                running across the street and we ended up over here.
+            </p>
+
+            <button class="notes-button" id="hard-notes-button">
+                Show Important Notes
+            </button>
+
+            <div id="hard-notes" class="answer hide-answer">
+                <h3>Important Notes</h3>
+
+                <p>
+                    Name: Andrew<br>
+                    First address: 1250 Main Street<br>
+                    Current address: 1400 Assembly Street<br>
+                    Two people were fighting<br>
+                    Andrew tried to break up the fight<br>
+                    Andrew was also hit<br>
+                    Wants police and arrests for assault<br>
+                    Police are on the way
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
