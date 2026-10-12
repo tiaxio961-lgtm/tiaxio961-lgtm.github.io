@@ -50,6 +50,35 @@
         <div id="practice-list">
     <p>Loading practice exercises...</p>
 </div>
+<section class="contact-section">
+    <h2>Contact Me</h2>
+    <p>send me a message if you have questions about interpreting.</p>
+
+    <form id="contact-form">
+        <input type="hidden" name="access_key"
+            value="7e3cf133-728f-4399-bc65-23efd087fcc7">
+
+        <input type="hidden" name="subject"
+            value="Better Interpretation Contact Message">
+
+        <input type="checkbox" name="botcheck"
+            style="display: none;" tabindex="-1">
+
+        <label for="contact-name">Name</label>
+        <input id="contact-name" type="text" name="name" required>
+
+        <label for="contact-email">Email</label>
+        <input id="contact-email" type="email" name="email" required>
+
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message"
+            rows="6" required></textarea>
+
+        <button id="send-button" type="submit">Send Message</button>
+    </form>
+
+    <p id="form-result" role="status" aria-live="polite"></p>
+</section>
 
     </main>
 

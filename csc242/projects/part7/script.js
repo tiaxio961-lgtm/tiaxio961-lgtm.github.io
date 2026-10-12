@@ -101,3 +101,59 @@ if (practiceList) {
 
     loadPractice();
 }
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+    const result = document.getElementById("form-result");
+    const sendButton = document.getElementById("send-button");
+
+    contactForm.addEventListener("invalid", () => {
+        result.className = "error";
+        result.textContent =
+            "Please complete all fields and enter a valid email address.";
+    }, true);
+
+    contactForm.onsubmit = async (event) => {
+        event.preventDefault();
+
+        result.className = "";
+        result.textContent = "Sending your message...";
+        sendButton.disabled = true;
+
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData);
+        const started = Date.now();
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(data)
+            });
+
+            const reply = await response.json();
+
+        
+            await new Promise((resolve) => {
+                setTimeout(resolve, Math.max(0, 1000 - (Date.now() - started)));
+            });
+
+            if (!response.ok || !reply.success) {
+                throw new Error("Message could not be sent.");
+            }
+
+            result.className = "success";
+            result.textContent = "Thank you! Your message was sent.";
+            contactForm.reset();
+        } catch (error) {
+            result.className = "error";
+            result.textContent =
+                "Your message could not be sent. Please try again.";
+        } finally {
+            sendButton.disabled = false;
+        }
+    };
+}

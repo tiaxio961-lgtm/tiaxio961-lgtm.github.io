@@ -921,3 +921,75 @@ select {
     line-height: 1.8;
     padding-left: 22px;
 }
+.contact-section {
+    margin: 50px auto 0;
+    max-width: 800px;
+    padding: 30px;
+    border: 3px solid #8caf98;
+    border-radius: 15px;
+    color: var(--primary-blue);
+}
+
+.contact-section h2 {
+    margin-top: 0;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--primary-blue);
+    border-radius: 8px;
+    font: inherit;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#send-button {
+    align-self: flex-start;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font: inherit;
+    cursor: pointer;
+}
+
+#send-button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+#form-result {
+    min-height: 24px;
+    line-height: 1.5;
+}
+
+#form-result.success {
+    color: #28623b;
+}
+
+#form-result.error {
+    color: #a12222;
+}
+
+@media (max-width: 800px) {
+    .contact-section {
+        padding: 20px;
+    }
+}
