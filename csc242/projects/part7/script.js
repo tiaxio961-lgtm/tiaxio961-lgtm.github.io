@@ -136,7 +136,7 @@ if (contactForm) {
 
             const reply = await response.json();
 
-        
+            // Keep the sending feedback visible for at least one second.
             await new Promise((resolve) => {
                 setTimeout(resolve, Math.max(0, 1000 - (Date.now() - started)));
             });
