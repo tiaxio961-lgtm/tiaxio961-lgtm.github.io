@@ -993,3 +993,29 @@ select {
         padding: 20px;
     }
 }
+.video-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 3px solid #8caf98;
+    border-radius: 15px;
+    color: var(--primary-blue);
+}
+
+.video-section h2 {
+    margin-top: 0;
+}
+
+.video-section iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+    .video-section {
+        padding: 15px;
+    }
+}
