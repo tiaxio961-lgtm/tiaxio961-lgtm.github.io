@@ -1,0 +1,116 @@
+[
+    {
+        "_id": 1,
+        "img_name": "images/notetake.png",
+        "title": "Contact Information",
+        "level": "Easy",
+        "text": "My phone number is 803-555-2741. My address is 124 Green Street, Columbia, South Carolina. My appointment is Monday at 9:30 AM.",
+        "notes": [
+            "Phone: 803-555-2741",
+            "Address: 124 Green Street, Columbia, SC",
+            "Appointment: Monday - 9:30 AM"
+        ]
+    },
+    {
+        "_id": 2,
+        "img_name": "images/notetake.png",
+        "title": "Picking Up Medicine",
+        "level": "Easy",
+        "text": "My name is Sarah. I need to pick up my medicine at the pharmacy on Friday after 3:00 PM.",
+        "notes": [
+            "Name: Sarah",
+            "Pick up medicine",
+            "Location: Pharmacy",
+            "Friday - after 3:00 PM"
+        ]
+    },
+    {
+        "_id": 3,
+        "img_name": "images/notetake.png",
+        "title": "School Meeting",
+        "level": "Easy",
+        "text": "The meeting with my son's teacher is Thursday at 11:00 AM. Please meet us in room 204.",
+        "notes": [
+            "Meeting: Son's teacher",
+            "Thursday - 11:00 AM",
+            "Room: 204"
+        ]
+    },
+    {
+        "_id": 4,
+        "img_name": "images/notetake.png",
+        "title": "Changing an Appointment",
+        "level": "Normal",
+        "text": "My name is Michael Johnson. My phone number is 803-555-6812. My address is 215 Pine Street, Columbia, South Carolina. My appointment was scheduled for Tuesday at 2:30 PM. I need to confirm that it has been changed to Wednesday at 10:00 AM.",
+        "notes": [
+            "Name: Michael Johnson",
+            "Phone: 803-555-6812",
+            "Address: 215 Pine Street, Columbia, SC",
+            "Original appointment: Tuesday - 2:30 PM",
+            "Confirm new appointment: Wednesday - 10:00 AM"
+        ]
+    },
+    {
+        "_id": 5,
+        "img_name": "images/notetake.png",
+        "title": "Car Repair",
+        "level": "Normal",
+        "text": "I dropped off my car yesterday because it was overheating. The shop said the repair would cost 350 dollars and should be finished Friday. Please call me at 803-555-0194 before doing any additional repairs.",
+        "notes": [
+            "Car dropped off yesterday",
+            "Problem: Overheating",
+            "Repair cost: $350",
+            "Expected completion: Friday",
+            "Call before additional repairs: 803-555-0194"
+        ]
+    },
+    {
+        "_id": 6,
+        "img_name": "images/notetake.png",
+        "title": "Delivery Address Change",
+        "level": "Normal",
+        "text": "My order number is 8426. The delivery was supposed to go to 310 Oak Street, but I moved last week. Please send it to 520 River Road instead. I will be home Saturday between 1:00 PM and 4:00 PM.",
+        "notes": [
+            "Order: 8426",
+            "Old address: 310 Oak Street",
+            "New address: 520 River Road",
+            "Moved last week",
+            "Home: Saturday - 1:00 PM to 4:00 PM"
+        ]
+    },
+    {
+        "_id": 7,
+        "img_name": "images/notetake.png",
+        "title": "Reporting a Fight",
+        "level": "Hard",
+        "text": "My name is Andrew. A fight started at 1250 Main Street, but we are now at 1400 Assembly Street. I do not know the people involved. I tried to break up the fight, but they started hitting me too. Please send police as soon as possible. I want them arrested for assault. The dispatcher said police are on the way.",
+        "notes": [
+            "Name: Andrew",
+            "First address: 1250 Main Street",
+            "Current address: 1400 Assembly Street",
+            "Does not know people involved",
+            "Tried to stop fight and was also hit",
+            "Requests police as soon as possible",
+            "Wants arrests for assault",
+            "Dispatcher says police are on the way"
+        ]
+    },
+    {
+        "_id": 8,
+        "img_name": "images/notetake.png",
+        "title": "Billing Problem",
+        "level": "Hard",
+        "text": "My name is Maria Lopez. My account number is 7284. I paid 120 dollars on September 15, but my new bill still shows that amount as unpaid and includes a 25-dollar late fee. The payment came out of my bank account on September 16. Please check the payment and remove the late fee if it was added by mistake. You can call me after 4:00 PM at 803-555-0128.",
+        "notes": [
+            "Name: Maria Lopez",
+            "Account: 7284",
+            "Paid: $120 on September 15",
+            "Bank withdrawal: September 16",
+            "Bill still shows $120 unpaid",
+            "Late fee: $25",
+            "Requests payment review",
+            "Remove late fee if added by mistake",
+            "Call after 4:00 PM: 803-555-0128"
+        ]
+    }
+]
